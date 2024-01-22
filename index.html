@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script
+      src="https://kit.fontawesome.com/71bf91a271.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="mx-5 my-2 lg:mx-[135px] flex justify-between">
+      <div class="lg:hidden">
+        <details class="dropdown">
+          <summary class="m-1 btn  bg-white border-none"><i class="fa-solid fa-bars"></i></summary>
+          <ul
+            class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
+          >
+            <li><a>Home 2</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </details>
+      </div>
+      <h1 class="text-x font-extrabold text-right my-auto lg:text-center lg:text-4xl">
+        Hockey<span class="text-[#ff4240]">'</span>s
+      </h1>
+      <div class="flex my-auto">
+        <ul class="lg:flex hidden gap-10 text-xl">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="flex justify-center">
+        <i class="sm:flex hidden fa-solid fa-magnifying-glass my-5 mr-4 bg-white"></i>
+        <button class="btn bg-[#ff4240] text-[#ffffff]">get ticket</button>
+      </div>
+    </header>
+  </body>
+</html>
