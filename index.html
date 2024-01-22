@@ -15,21 +15,25 @@
       src="https://kit.fontawesome.com/71bf91a271.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  *{font-family: 'Manrope', sans-serif;}
-
-
-
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header class="mx-5 my-2 lg:mx-[135px] flex justify-between ">
+    <header class="mx-5 my-2 lg:mx-[135px] flex justify-between">
       <div class="lg:hidden">
         <details class="dropdown">
-          <summary class="m-1 btn  bg-white border-none"><i class="fa-solid fa-bars"></i></summary>
+          <summary class="m-1 btn bg-white border-none">
+            <i class="fa-solid fa-bars"></i>
+          </summary>
           <ul
             class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52"
           >
@@ -41,7 +45,9 @@
           </ul>
         </details>
       </div>
-      <h1 class="text-x font-extrabold text-right my-auto lg:text-center lg:text-4xl pr-8">
+      <h1
+        class="text-x font-extrabold text-right my-auto lg:text-center lg:text-4xl pr-8"
+      >
         Hockey<span class="text-[#ff4240]">'</span>s
       </h1>
       <div class="flex my-auto">
@@ -55,9 +61,51 @@
       </div>
 
       <div class="flex justify-center">
-        <i class="sm:flex hidden fa-solid fa-magnifying-glass my-5 mr-4 bg-white"></i>
+        <i
+          class="sm:flex hidden fa-solid fa-magnifying-glass my-5 mr-4 bg-white"
+        ></i>
         <button class="btn bg-[#ff4240] text-[#ffffff]">get ticket</button>
       </div>
     </header>
+    <main>
+      <!-- banner -->
+      <section class="banner 1 flex flex-col">
+        <div
+          class="carousel lg:w-[80%] mx-[25px] lg:mx-[135px] my-auto rounded-md mb-2"
+        >
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black grid gap-4 p-3 rounded-md mx-[20px] lg:translate-x-[660px] lg:-translate-y-32 lg:w-[502px] lg:h-[101px]"> 
+          <h1 class="font-bold text-white">Meet all the heroes from the field</h1>
+          <p class="text-[#ffffff99]">Wassap fellow sports lover?Hope all are doing well</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
